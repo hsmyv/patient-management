@@ -69,6 +69,12 @@ import {E164Number} from "libphonenumber-js/core"
                     className="input-phone"/>
                 </FormControl>
               )
+            case FormFieldType.DATE_PICKER:
+              return (
+                <div className="">
+
+                </div>
+              )
         
             default:
             break;

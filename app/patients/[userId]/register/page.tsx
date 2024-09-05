@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export const Registration = async ({params: {userId}}: SearchParamProps) => {
+ const Register = async ({params: {userId}}: SearchParamProps) => {
     const user = await getUser(userId);
 
   return (
@@ -42,3 +42,5 @@ export const Registration = async ({params: {userId}}: SearchParamProps) => {
     </div>
   )
 }
+
+export default Register
